@@ -202,7 +202,7 @@ describe '投稿のテスト' do
 			visit book_path(book)
 		  	click_button 'Create Book comment'
 		  	expect(page).to have_no_content book.book_comments.all
-		  	expect(current_path).to eq '/books/' + book.id.to_s
+		  	expect(current_path).to eq '/books/' + book.id.to_s + '/book_comments'
 		end
   	end
   	context '自分の投稿詳細画面の表示を確認' do

@@ -13,25 +13,25 @@ describe 'bootstrapのテスト' do
 		context 'ユーザー関連画面' do
 			it '一覧画面' do
 				visit users_path
-				expect(page).to have_selector('.container .row .col-xs-3')
-				expect(page).to have_selector('.container .row .col-xs-9')
+				expect(page).to have_selector('.container .row .col-md-3')
+				expect(page).to have_selector('.container .row .col-md-9')
 			end
 			it '詳細画面' do
 				visit user_path(user)
-				expect(page).to have_selector('.container .row .col-xs-3')
-				expect(page).to have_selector('.container .row .col-xs-9')
+				expect(page).to have_selector('.container .row .col-md-3')
+				expect(page).to have_selector('.container .row .col-md-9')
 			end
 		end
 		context '投稿関連画面' do
 			it '一覧画面' do
 				visit books_path
-				expect(page).to have_selector('.container .row .col-xs-3')
-				expect(page).to have_selector('.container .row .col-xs-9')
+				expect(page).to have_selector('.container .row .col-md-3')
+				expect(page).to have_selector('.container .row .col-md-9')
 			end
 			it '詳細画面' do
 				visit book_path(book)
-				expect(page).to have_selector('.container .row .col-xs-3')
-				expect(page).to have_selector('.container .row .col-xs-9')
+				expect(page).to have_selector('.container .row .col-md-3')
+				expect(page).to have_selector('.container .row .col-md-9')
 			end
 		end
 	end
